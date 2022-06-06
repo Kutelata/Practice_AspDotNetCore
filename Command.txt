@@ -1,0 +1,24 @@
+dotnet --version 
+dotnet --list-sdks
+
+dotnet build
+dotnet run
+dotnet watch run
+dotnet run --launch-profile 'Dev'
+dotnet run -c|--configuration <CONFIGURATION>
+
+dotnet new --list
+
+dotnet new gitignore
+
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+Add-Migration InitialCreate
+Update-Database
+Scaffold-DbContext "Connection String" -OutputDir Folder -force
+
+Put: Đẩy lên kèm theo 1 mã định danh(id) (Dùng để sửa)
+Post: Đẩy lên với những mã định danh khác nhau (Dùng để thêm mới)

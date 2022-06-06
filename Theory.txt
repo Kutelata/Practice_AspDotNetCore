@@ -1,0 +1,50 @@
+Tham chiếu : tham số với đối số là 1, tham số thay đổi thì đối số thay đổi 
+Tham trị : tham số copy đối số , tham số thay đổi thì đối số không thay đổi
+ref: 
+	- Trong trường hợp là đối số : lấy giá trị hiện tại của biến sử dụng
+	- Trong trường hợp là tham số : lấy vùng nhớ hiện tại của biến sử dụng
+out:
+	- Tương tự ref nhưng không quan tâm đến giá trị ban đầu của biến 
+	- Và phải khởi tạo giá trị trong hàm 
+enum: 
+	- Là kiểu dữ liệu liệt kê danh sách các biểu tượng hằng, tham trị
+	- Không thể kế thừa
+async: 
+	- Đánh dấu 1 tiến trình bất đồng bộ
+await:
+	- Đợi 1 tiến trình thực thi xong
+task:
+	- Hỗ trợ chạy đa luồng 
+thread: 
+	- Hỗ trợ chạy đa luồng
+readonly:
+	- Giá trị sẽ được gán tại thời điểm khởi tạo đối tượng ( run time constant , constructor )
+	- Và không được gán lại
+static:
+	- Biến global của đối tượng, có thể mang đi gán và lưu trữ 
+init:
+	- Là setter nhưng chỉ hoạt động thời điểm khởi tạo đối tượng ( run time constant , constructor )
+generic: 
+	- Là tham số của hàm, class, interface... (T)
+delegate:
+	- Là con trỏ hàm có thể tham chiếu đến (giá trị trả về và tham số) của hàm
+goto: Nhảy đến label được gọi
+
+private: Phạm vi trong lớp đấy
+protected: Phạm vi các lớp kế thừa
+internal: Phạm vi trong project 
+public: Phạm vi tất cả
+protected internal: Phạm vi là các lớp kế thừa trong project
+private protected: Phạm vi là các lớp kế thừa trong lớp đấy
+
+Dependency Injection Pattern: kiểu để cấu hình sự phụ thuộc
+	- Transient Service: cứ gọi đến sự phụ thuộc là nó sẽ thay đổi 
+	- Scoped Service: sự phụ thuộc sẽ thay đổi theo request (load lại trang)
+	- Singleton Service: chỉ tạo một lần duy nhất cho toàn ứng dụng
+
+First(): trả về phần tử đầu tiên trong list, sẽ xảy ra lỗi khi không có phần tử nào ( theo điều kiện )
+FirstOrDefault(): giống First() nhưng chỉ trả về lỗi khi list rỗng
+Single(): trả về duy nhất 1 phần tử, sẽ báo lỗi khi trả về 0 hoặc nhiều hơn 1 hoặc không có phần tử nào ( theo điều kiện)
+SingleOrDefault(): giống Single() nhưng chỉ báo lỗi khi trả về 0 hoặc nhiều hơn 1
+
+upload file : thêm quyền iis_usrs vào folder
