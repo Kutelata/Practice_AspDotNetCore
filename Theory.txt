@@ -48,3 +48,7 @@ Single(): trả về duy nhất 1 phần tử, sẽ báo lỗi khi trả về 0 
 SingleOrDefault(): giống Single() nhưng chỉ báo lỗi khi trả về 0 hoặc nhiều hơn 1
 
 upload file : thêm quyền iis_usrs vào folder
+
+Lazy Load : Truy cập thì mới load
+Eager Load : Load hết 
+Explicit Loading : Load hết nhưng theo thứ tự
